@@ -15,6 +15,12 @@ class Config:
         self.llm_timeout = self.get_config_value('llm', 'timeout', 60)
         self.llm_max_workers = self.get_config_value('llm', 'max_workers', 4)
 
+        self.llm_r1_base_url = self.get_config_value('llm_r1', 'base_url', None)
+        self.llm_r1_api_key = self.get_config_value('llm_r1', 'api_key', None)
+        self.llm_r1_model = self.get_config_value('llm_r1', 'model', None)
+        self.llm_r1_timeout = self.get_config_value('llm_r1', 'timeout', 60)
+        self.llm_r1_max_workers = self.get_config_value('llm_r1', 'max_workers', 4)
+
         self.ai_news_url = self.get_config_value('ai_news', 'url', None)
         self.ai_news_schedule = self.get_config_value('ai_news', 'schedule', None)
         self.ai_news_prompts = self.get_config_value('ai_news', 'prompts', None)

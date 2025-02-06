@@ -42,7 +42,7 @@ def my_schedule():
 
 def my_flask():
     logger.info('Starting API')
-    app.run(host='0.0.0.0', port=80)
+    app.run(host='0.0.0.0', port=5123)
 
 if __name__ == '__main__':
     with concurrent.futures.ThreadPoolExecutor(max_workers=2) as executor:
